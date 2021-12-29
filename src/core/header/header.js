@@ -5,6 +5,7 @@ class Header extends Component{
     render() {
         return(
             <div className={styles.container}>
+                Task Manager Application
             </div>
         )
     }
