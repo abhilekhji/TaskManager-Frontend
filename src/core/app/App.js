@@ -1,17 +1,23 @@
-import React from "react";
-import Header from '../header';
-import Routes from "../routes";
-import Footer from '../footer';
-function App() {
-  return (
-    <>
-      <div>
-        <Header />
-        <Routes />
-        <Footer />
-      </div>
-    </>
-  );
+import { Col, Row } from "antd";
+import React,{Component} from "react";
+import NewTask from "../newTask";
+
+import styles from './app.module.css';
+class App extends Component {
+  render() {
+    return (
+      <>
+        <div className={styles.container}>
+          <Row>
+            <Col span={16}></Col>
+            <Col span={8}>
+              <NewTask />
+            </Col>
+          </Row>
+        </div>
+      </>
+    );
+  }
 }
 
 export default App;
