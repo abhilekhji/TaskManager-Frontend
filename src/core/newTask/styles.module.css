@@ -1,12 +1,36 @@
+@font-face {
+    font-family: 'tohoma';
+    src: url('../../assets/fonts/tahoma.ttf');
+}
 .container {
     background-color: #d4e2ef;
     width: 20rem;
-    border-radius: 10px;
-    min-height: 20rem;
+    border-radius: 20px;
+    height: 20rem;
 }
 .topBar {
-    /* background-color: #00315e; */
-    /* background-color: antiquewhite; */
-    /* overflow: hidden ; */
-    
+    background-color: #00315e;    
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;    
+}
+.heading {
+    font-family: 'tohoma';
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: #d4e2ef;
+}
+.inside {
+    height: 15rem;
+    overflow: auto;
+}
+.inside::-webkit-scrollbar{
+    width: 4vw;
+}
+.text {
+    padding: 1rem;
+    color: #00315e;
+    font-family: 'tohoma';
+    font-weight: bold;
 }
