@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'tohoma';
+    src: url('../../../assets/fonts/tahoma.ttf');
+}
+.container {
+    background-color: #dee8f1;
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.completedTask {
+    color: #00315e;
+    font-size: 1rem;
+    font-family: 'tohoma';
+}
+.completedTask:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+.incompletedTask {
+    color: #00315e;
+    font-size: 1rem;
+    font-family: 'tohoma';
+    text-decoration: line-through;
+}
+.incompletedTask:hover {
+    font-weight: bold;
+    cursor: pointer;
+}

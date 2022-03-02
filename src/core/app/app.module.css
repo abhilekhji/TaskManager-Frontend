@@ -2,4 +2,13 @@
     background-color: #a8d5ff;
     height: 97vh;
     border: solid 10px #002e58;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+@media screen and (max-width: 425px) {
+    .container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }

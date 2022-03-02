@@ -26,7 +26,17 @@
     overflow: auto;
 }
 .inside::-webkit-scrollbar{
-    width: 4vw;
+    width: 1rem;
+}
+.inside::-webkit-scrollbar-track {
+    background-color: #3844502a;
+}
+.inside::-webkit-scrollbar-thumb {
+    background-color: #325e86;
+    border-radius: 10px;
+}
+.inside::-webkit-scrollbar-thumb:hover {
+    background-color: #00315e;
 }
 .text {
     padding: 1rem;
