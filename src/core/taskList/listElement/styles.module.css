@@ -8,6 +8,8 @@
     padding: 1rem;
     border-radius: 10px;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 .completedTask {
     color: #00315e;
@@ -26,5 +28,9 @@
 }
 .incompletedTask:hover {
     font-weight: bold;
+    cursor: pointer;
+}
+.icon{
+    padding: 0.2rem;
     cursor: pointer;
 }
