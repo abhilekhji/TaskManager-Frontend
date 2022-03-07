@@ -20,19 +20,23 @@ class TaskList extends Component {
         const config = {
             method: 'get',
             url: 'http://localhost:8000/api/tasks/getAllTasks',
+            headers: { }
         };
           
-        axios(config)
-        .then(function (response) {
-            console.log("ahise: ",response.data);
+        await axios(config)
+        .then(res => {
+            if(res.data.status) {
+                this.setState({data: res.data.data})
+            }
         })
-        .catch(function (error) {
-            console.log("nai aha: ", error);
+        .catch(err => {
+            console.log("error: ", err);
         });
     }
 
     render() {
         const { data } = this.state;
+        console.log(data);
         return (
             <div className={styles.container}>
                 {data.map((item)=><ListElement key={item._id} name={item.name} isCompleted={item.completed}/>)}
